@@ -1,0 +1,24 @@
+.petcardtext{
+    color: white;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 5px 5px gray;
+    animation: fadeInOpacity 1s;
+}
+@keyframes fadeInOpacity {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+    }
+/* @keyframes slide-in {
+    from{
+        transform: translateX(1600px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+} */

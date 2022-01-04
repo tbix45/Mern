@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+.author-form{
+  border: 2px solid black;
+  width: 30%;
+  margin: 15px auto;
+  padding: 15px;
+}
+.author-card{
+  border: 2px solid black;
+  width: 30%;
+  margin: 15px auto;
+  padding: 15px;
+}

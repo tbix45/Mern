@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+}
+.pet-card{
+  border: 1px solid black;
+  width: 30%;
+  margin: auto;
+  padding: 15px;
+  background-color: #000000d0;
+  color: white;
+  border-radius: 15px;
+}
+.table-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.table-heading2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: 25px auto 10px auto;
+  
+}
+.table{
+  width: 70%;
+}
+form{
+  width: 50%;
+  margin: 15px auto;
+  border: 1px solid black;
+  padding: 15px;
+}
+.form-columns{
+  display: flex;
+}
+.form-group{
+  margin: 10px;
+}
+span{
+  font-weight: bold;
+}

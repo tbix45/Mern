@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  /* background-image: url("https://source.unsplash.com/1600x900/daily/?darthvader"); */
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp1854177.png&f=1&nofb=1");
+  height: 100vh;
+}
+.searchbar{
+  width: 80%;
+  margin: auto;
+  color: black;
+}
+.form-group{
+  display: flex;
+  align-items: center;
+}
+form{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.infocard{
+  color: white;
+  background-color: #000000d0;
+  width: 30%;
+  margin: 12% auto;
+  padding: 10px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  animation: fadeInOpacity 1s;
+  /* filter: blur(10px); */
+}
+.lowerurl{
+  text-transform: lowercase;
+}
+.infocard:hover{
+  border:3px solid red;
+  /* filter: blur(10px); */
+}
+@keyframes fadeInOpacity {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+    }
+
+.obiwanpic{
+  border-radius: 15px;
+}

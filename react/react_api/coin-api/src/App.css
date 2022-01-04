@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+  color: white;
+  background-color: black
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+}
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 15px;
+}
+button{
+  margin: 15px;
+}
+.coincard{
+  width: 20%;
+  background-color: #000000d0;
+  color: white;
+  border-radius: 15px;
+  margin: 15px;
+  padding: 15px;
+}
+.coin-container{
+  position: relative;
+  transition: transform 0.2s;
+  overflow: hidden;
+}
+.coin-container:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.coin-container:hover .overlay{
+  opacity: 1;
+}
+.overlay{
+  position: absolute;
+  background-color: orange;
+  width:100%;
+  transition: 0.5 ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+}

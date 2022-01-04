@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+.pokemonCard{
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngmart.com%2Ffiles%2F2%2FPokeball-PNG-Photos.png&f=1&nofb=1");
+  border-radius: 50%;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  animation: fadeInOpacity 1s;
+}
+@keyframes fadeInOpacity {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+    }
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pokeprops{
+  background-color: rgba(255, 255, 0, 0.817);
+  border-radius: 30px;
+  padding: 5px;
+  margin-top: 25px;
+  ;
+}
