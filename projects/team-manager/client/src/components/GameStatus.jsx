@@ -23,8 +23,16 @@ const GameStatus = (props) => {
         // clicking undecided button should make it yellow and all other buttons clear 
         // clicking not playing buttton should make 'not playing' button red and all other clear
         //clicking playing button should make 'playing' button green and all others clear
-        gameStatus === "undecided" ? setBtnColor(btnColor) : setBtnColor('white')
-        gameStatus === "not-playing" ? setBtnColor("red") : <p></p>
+        if (gameStatus === "not-playing") {
+            setBtnColor('red')
+        } else if (gameStatus === "playing") {
+            setBtnColor('green')
+        } else {
+            setBtnColor('yellow')
+        }
+        // gameStatus === "not-playing" ? setBtnColor("red") :
+        //     gameStatus === "playing" ? setBtnColor("green") :
+        //         gameStatus === "undecided" ? setBtnColor(btnColor) : setBtnColor('yellow')
     }
 
     return (
@@ -40,20 +48,25 @@ const GameStatus = (props) => {
                     <tr>
                         <th>Name</th>
                         <th>Actions</th>
+                        <th>Status</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
                         allPlayers.map((player, i) => {
                             return (
-                                <tr key={i}>
-                                    <th><p>{player.name}</p></th>
-                                    <th>
-                                        <button onClick={changeStatus} className='btn mr-3' name="playing" value="playing">Playing</button>
-                                        <button onClick={changeStatus} style={{ backgroundColor: btnColor }} className='btn mr-3' name="not-playing" value="not-playing">Not Playing</button>
-                                        <button onClick={changeStatus} style={{ backgroundColor: btnColor }} className='btn' name="undecided" value="undecided">Undecided</button>
-                                    </th>
-                                </tr>
+                                <>
+                                    <tr key={i}>
+                                        <th><p>{player.name}</p></th>
+                                        <th>
+                                            <button onClick={changeStatus} className='btn mr-3' name="playing" value="playing">Playing</button>
+                                            <button onClick={changeStatus} className='btn mr-3' name="not-playing" value="not-playing">Not Playing</button>
+                                            <button onClick={changeStatus} className='btn' name="undecided" value="undecided">Undecided</button>
+                                        </th>
+                                        <th><button style={{ backgroundColor: btnColor }} className='btn'>Status</button></th>
+                                    </tr>
+
+                                </>
                             )
                         })
                     }
