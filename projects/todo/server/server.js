@@ -10,4 +10,8 @@ app.use(cors())
 //a connection to our config file which hooks up mongoose commands
 require("./config/mongoose.config")
 
+//a connection to our routes file
+const AllMyRoutes = require("./routes/task.routes");
+AllMyRoutes(app);
+
 app.listen(port, () => console.log(`Running on port ${port}!!`))

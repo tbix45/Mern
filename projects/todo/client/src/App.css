@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+}
+.one-task{
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+}
+.container{
+background-color: blanchedalmond;
+width: 30%;
+border-radius: 15px;
+padding: 10px;
+}
+.all-tasks{
+  display: flex;
+  justify-content: center;
+  
+}
+.checkbox{
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
